@@ -30,11 +30,11 @@ For all users the following components are required:
 ### For OS X users
 * [Xcode Command Line Tools](https://developer.apple.com/library/ios/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-DOWNLOADING_COMMAND_LINE_TOOLS_IS_NOT_AVAILABLE_IN_XCODE_FOR_OS_X_10_9__HOW_CAN_I_INSTALL_THEM_ON_MY_MACHINE_)
 
-## Usage
-After downloading, run `python get-cloudify.py -h` to get a detailed help page
-which describes the capabilities of the script.
+## Downloading and using
+1. [Download](http://gigaspaces-repository-eu.s3.amazonaws.com/org/cloudify3/get-cloudify.py) the script (right click the link and choose Save).
+2. Run `python get-cloudify.py -h` to get a detailed help manual.
 
-### Installing the latest Stable Release into a new virtualenv
+### Installing the latest stable release into a new virtualenv
 Run the following command in order to create new virtualenv (`my_virtualenv`) and
 install Cloudify in it:
 
@@ -57,14 +57,14 @@ $ source my_virtualenv/bin/activate
 If you're already within a virtualenv when running the script and have not supplied the `--virtualenv` flag, the script will install Cloudify within the currently active virtualenv.
 {{% /gsNote %}}
 
-### Installing the latest Milestone Release
+### Installing the latest milestone release
 Run the following command in order to install that latest bleeding edge release:
 
 {{< gsHighlight  bash  >}}
 $ python get-cloudify.py --pre
 {{< /gsHighlight >}}
 
-### Installing a specific Milestone Release
+### Installing a specific version
 Run the following command in order to install specific version of Cloudify:
 
 {{< gsHighlight  bash  >}}
