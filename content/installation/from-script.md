@@ -50,7 +50,6 @@ $ sudo python get-cloudify.py -e my_virtualenv --installvirtualenv
 ...
 
 $ source my_virtualenv/bin/activate
-...
 
 {{< /gsHighlight >}}
 
@@ -63,8 +62,6 @@ Run the following command in order to install that latest bleeding edge release:
 
 {{< gsHighlight  bash  >}}
 $ python get-cloudify.py --pre
-...
-
 {{< /gsHighlight >}}
 
 ### Installing a specific Milestone Release
@@ -72,8 +69,6 @@ Run the following command in order to install specific version of Cloudify:
 
 {{< gsHighlight  bash  >}}
 $ python get-cloudify.py --version 3.2a4
-...
-
 {{< /gsHighlight >}}
 
 Full list of PyPi versions is [available here](https://pypi.python.org/pypi/cloudify/json).

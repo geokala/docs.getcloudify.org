@@ -30,15 +30,16 @@ The Windows installer is a single executable which installs the following:
 Python's installation requires a specific Microsoft Visual C++ 2008 Redistributable Package provided [here](https://www.microsoft.com/en-us/download/details.aspx?id=29). Install it if you stumble upon an error during the Python installation.
 {{% /gsNote %}}
 
-{{% gsNote title="Installing Python" %}}
-If Python is not already installed, the executable will attempt to install it. During Python's installation you will be able to choose different installation options such as installing pip, adding the python executable to the path, and so on. If you choose, for instance, to not install pip and continue with the installation, you will be notified that you must install pip and it will be installed for you. The same goes for virtualenv.
+{{% gsNote title="Installing Python and Pip" %}}
+During Python setup wizard you will get the option to choose whether to install Pip
+with Python or not. Regardless of what you choose ,it will be installed in the next steps.
 {{% /gsNote %}}
 
 ### To install on Windows
 
-* [Download the installer](http://getcloudify.org/downloads/get_cloudify_3x.html).
-* Run the installer and follow the installation instructions.
-* When the installation is finished, double click the new Cloudify icon on your desktop.
+1. [Download the installer](http://getcloudify.org/downloads/get_cloudify_3x.html).
+2. Run the installer and follow the installation instructions.
+3. When the installation is finished, double click the new Cloudify icon on your desktop.
 
 ### Uninstalling
 
@@ -55,16 +56,19 @@ instead of Cloudify CLI.
 
 ## Linux
 
-To install via rpm packages, you must have `Python2.7.x` and Pip 6.0+ installed
-and Python executable must be accessible as `python` from the path (not as `python2`, for example).
+{{% gsNote title="Installing Prerequisites" %}}
+To install via rpm packages, you must have `Python2.7.x` and `Pip 6.0+` installed.
+Additionally, Python executable must be accessible as `python` from the path
+(not as `python2` or `python2.7`).
+{{% /gsNote %}}
 
 ### Centos/RHEL
 
-* [Download the installer](http://getcloudify.org/downloads/get_cloudify_3x.html)
-* If running in graphical environment, proceed with graphical package installer
-of your environment by double clicking the file.
-* Alternatively, in your terminal run the following (replacing `<pkg.rpm>` with
-the path of the file you just downloaded)
+1. [Download the installer](http://getcloudify.org/downloads/get_cloudify_3x.html)
+2. If running in graphical environment, proceed with graphical package installer
+of your environment by double clicking the file you just downloaded.
+3. Alternatively, in your terminal run the following command (replacing `<pkg.rpm>` with
+the path of the file you just downloaded):
 
 {{< gsHighlight bash>}}
 $ sudo rpm -i <pkg.rpm>
