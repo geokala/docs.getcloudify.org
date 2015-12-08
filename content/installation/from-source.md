@@ -7,14 +7,23 @@ weight: 500
 
 ---
 
-Installing Cloudify from sources is possible from two locations: PyPi and GitHub.
+Installing Cloudify from sources is possible from two locations:
+[PyPi](https://pypi.python.org/pypi) and [GitHub](http://github.com/).
 
 {{% gsNote title="Advanced Section" %}}
 This way of installation is intended for advanced users or developers.
+
 Installation from source requires an environment with compilers since some of Cloudify's
 dependencies are not pure Python modules.
-Familiarity with tools such as [Virtualenv](https://virtualenv.readthedocs.org/en/latest/) & [Pip](https://pip.pypa.io/en/stable/) is recommended.
+
+Familiarity with [Virtualenv](https://virtualenv.readthedocs.org/en/latest/) and [Pip](https://pip.pypa.io/en/stable/) is recommended as well.
 {{% /gsNote %}}
+
+{{% gsTip title="Install inside Virtualenv" %}}
+It is recommended to install all of the components below in Python's Virtualenv
+in order to avoid pollute the global Python environment on your system and the
+need for root permissions on some of the systems.
+{{% /gsTip %}}
 
 ## Installation Prerequisites
 For all users the following components are required:
