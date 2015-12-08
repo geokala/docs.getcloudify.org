@@ -18,9 +18,10 @@ Familiarity with tools such as [Virtualenv](https://virtualenv.readthedocs.org/e
 
 ## Installation Prerequisites
 For all users the following components are required:
+
 * [Python 2.7.X](https://www.python.org/downloads/)
-* [pip](https://pip.pypa.io/en/stable/installing/)
-* [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html)
+* [pip 6.0+](https://pip.pypa.io/en/stable/installing/)
+* [virtualenv 12.0+](https://virtualenv.readthedocs.org/en/latest/installation.html)
 
 ### For Windows users
 * [Microsoft Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
@@ -39,8 +40,8 @@ Cloudify uses GitHub as it's main online source code repository.
 Installing latest stable version from GitHub can be done by running the following
 commands in terminal:
 {{< gsHighlight bash >}}
-$ CFY_VERSION="3.3" \
-  pip install "https://github.com/cloudify-cosmo/cloudify-cli/archive/$CFY_VERSION.zip" \
+$ CFY_VERSION="3.3"
+$ pip install "https://github.com/cloudify-cosmo/cloudify-cli/archive/$CFY_VERSION.zip" \
   --requirement "https://raw.githubusercontent.com/cloudify-cosmo/cloudify-cli/$CFY_VERSION/dev-requirements.txt"
 {{< /gsHighlight >}}
 
