@@ -1,35 +1,35 @@
 ---
 layout: bt_wiki
-title: Installing from source
+title: Installing from sources
 category: Installation
 draft: false
 weight: 500
 
 ---
 
-To install Cloudify from source you must install several packages in the correct order.
+Installing Cloudify from sources is possible from two locations: PyPi and GitHub.
 
-Let's say you want to install from the `master` branch. run:
+{{% gsNote title="Installation Prerequisites" %}}
+Installation from sources
+{{% /gsNote %}}
 
-{{< gsHighlight  bash  >}}
-$ pip install https://github.com/cloudify-cosmo/cloudify-dsl-parser/archive/master.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-rest-client/archive/master.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-plugins-common/archive/master.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-script-plugin/archive/master.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-cli/archive/master.zip
-...
 
+## Installing from PyPi
+
+## Installing from GitHub
+
+Install latest stable version from GitHub can be done by running the following commands in the terminal:
+{{< gsHighlight bash >}}
+$ CFY_VERSION="3.3"
+$ pip install "https://github.com/cloudify-cosmo/cloudify-cli/archive/$CFY_VERSION.zip" \
+  --requirement "https://raw.githubusercontent.com/cloudify-cosmo/cloudify-cli/$CFY_VERSION/dev-requirements.txt"
 {{< /gsHighlight >}}
 
-
-To install from any other tag or branch (e.g. "my_tag"), run:
-
-{{< gsHighlight  bash  >}}
-$ pip install https://github.com/cloudify-cosmo/cloudify-dsl-parser/archive/my_tag.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-rest-client/archive/my_tag.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-plugins-common/archive/my_tag.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-script-plugin/archive/my_tag.zip
-$ pip install https://github.com/cloudify-cosmo/cloudify-cli/archive/my_tag.zip
-...
-
+Installing latest bleeding edge release can be done in the similar manner:
+{{< gsHighlight bash >}}
+$ CFY_VERSION="master"
+$ pip install "https://github.com/cloudify-cosmo/cloudify-cli/archive/$CFY_VERSION.zip" \
+  --requirement "https://raw.githubusercontent.com/cloudify-cosmo/cloudify-cli/$CFY_VERSION/dev-requirements.txt"
 {{< /gsHighlight >}}
+
+You can set `CFY_VERSION` variable to any desired version from [version list](https://github.com/cloudify-cosmo/cloudify-cli/tags).
