@@ -20,9 +20,9 @@ Familiarity with [Virtualenv](https://virtualenv.readthedocs.org/en/latest/) and
 {{% /gsNote %}}
 
 {{% gsTip title="Install inside Virtualenv" %}}
-It is recommended to install all of the components below in Python's Virtualenv
-in order to avoid pollute the global Python environment on your system and the
-need for root permissions on some of the systems.
+It is recommended to install all of the components below in a virtualenv
+in order to avoid polluting the global Python environment on your system and the
+remove the requirement for root permissions on some of the systems.
 {{% /gsTip %}}
 
 ## Installation Prerequisites
@@ -82,4 +82,4 @@ PyPi contains the same [releases](https://github.com/cloudify-cosmo/cloudify-cli
 is a bit different, for example, to get 3.3m6 from PyPi, you'll need to request
 `cloudify==3.3a6`.
 
-Full list of PyPi versions is [available here](https://pypi.python.org/pypi/cloudify/json)
+Full list of PyPi versions is [available here](https://pypi.python.org/pypi/cloudify/json).
