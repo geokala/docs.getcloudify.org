@@ -11,18 +11,16 @@ Installing Cloudify from sources is possible from two locations: PyPi and GitHub
 
 {{% gsNote title="Advanced Section" %}}
 This way of installation is intended for advanced users or developers.
-
 Installation from source requires an environment with compilers since some of Cloudify's
 dependencies are not pure Python modules.
-
 Familiarity with tools such as [Virtualenv](https://virtualenv.readthedocs.org/en/latest/) & [Pip](https://pip.pypa.io/en/stable/) is recommended.
 {{% /gsNote %}}
 
 ## Installation Prerequisites
-### For all users
-* Python 2.7.X
-* pip
-* virtualenv
+For all users the following components are required:
+* [Python 2.7.X](https://www.python.org/downloads/)
+* [pip](https://pip.pypa.io/en/stable/installing/)
+* [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html)
 
 ### For Windows users
 * [Microsoft Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
@@ -32,7 +30,7 @@ Familiarity with tools such as [Virtualenv](https://virtualenv.readthedocs.org/e
 * C compiler (`gcc`)
 
 ### For OS X users
-* Xcode Command Line Tools
+* [Xcode Command Line Tools](https://developer.apple.com/library/ios/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-DOWNLOADING_COMMAND_LINE_TOOLS_IS_NOT_AVAILABLE_IN_XCODE_FOR_OS_X_10_9__HOW_CAN_I_INSTALL_THEM_ON_MY_MACHINE_)
 
 ## Installing from GitHub
 
