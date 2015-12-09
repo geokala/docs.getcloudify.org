@@ -7,7 +7,7 @@ weight: 300
 
 ---
 
-[get-cloudify.py](http://gigaspaces-repository-eu.s3.amazonaws.com/org/cloudify3/get-cloudify.py) is a Python script that is dedicated to install Cloudify on different platforms.
+[get-cloudify.py](http://gigaspaces-repository-eu.s3.amazonaws.com/org/cloudify3/get-cloudify.py) is a Python script that is dedicated to installing Cloudify on different platforms.
 
 {{% gsWarning title="Prerequisites Installation" %}}
 By default, this script will not install any prerequisites. You can supply it with the `--force` flag which will install all prerequisites without prompting you for anything other than a sudoer password (if required).
@@ -24,7 +24,7 @@ For all users the following components are required:
 * PyCrypto ([32bit](http://repository.cloudifysource.org/org/cloudify3/components/pycrypto-2.6.win32-py2.7.exe) / [64bit](http://repository.cloudifysource.org/org/cloudify3/components/pycrypto-2.6.win-amd64-py2.7.exe))
 
 ### For Linux users
-* Python development headers (`python-dev` in Ubuntu or `python-devel` in CentOS)
+* Python development headers (`python-dev` in Ubuntu/Debian or `python-devel` in CentOS/RHEL)
 * C compiler (`gcc`)
 
 ### For OS X users
@@ -65,7 +65,7 @@ $ python get-cloudify.py --pre
 {{< /gsHighlight >}}
 
 ### Installing a specific version
-Run the following command in order to install specific version of Cloudify:
+Run the following command in order to install a specific version of Cloudify:
 
 {{< gsHighlight  bash  >}}
 $ python get-cloudify.py --version 3.2a4

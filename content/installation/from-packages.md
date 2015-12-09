@@ -10,11 +10,11 @@ weight: 200
 Cloudify packages greatly reduce the initial complexity of the installation process
 and are the recommended way of installing for new users.
 
-This installation method doesn't require internet connection during the install
-process.
+This installation method doesn't require an active internet connection during
+the installation process.
 
 {{% gsNote title="Installation Environment" %}}
-Note that a virtualenv will be automatically created during installation and Cloudify's CLI will be installed within it.
+Note that a virtualenv will be automatically created during installation and Cloudify will be installed within it.
 {{% /gsNote %}}
 
 ## Windows
@@ -31,8 +31,9 @@ Python's installation requires a specific Microsoft Visual C++ 2008 Redistributa
 {{% /gsNote %}}
 
 {{% gsNote title="Installing Python and Pip" %}}
-During Python setup wizard you will get the option to choose whether to install Pip
-with Python or not. Regardless of what you choose ,it will be installed in the next steps.
+During Python's setup wizard, you will be able to choose whether to install pip or not.
+Regardless of what you choose, pip will be installed in the next steps since it is
+required by Cloudify.
 {{% /gsNote %}}
 
 ### To install on Windows
@@ -43,12 +44,14 @@ with Python or not. Regardless of what you choose ,it will be installed in the n
 
 ### Uninstalling
 
-1. Open Programs and Features by clicking the Start button Picture of the Start button, clicking Control Panel, clicking Programs, and then clicking Programs and Features.
-2. Select a Cloudify CLI, and then click Uninstall.
+1. Open Programs and Features by clicking the Start button Picture of the Start button,
+clicking Control Panel, clicking Programs, and then clicking Programs and Features.
+2. Select a Cloudify CLI and then click Uninstall.
 
 {{% gsNote title="Uninstalling Python" %}}
-Note that uninstalling the package will not remove Python, pip and Virtualenv whether they were or were not installed during the installation process. It is up to the user if
-he would like to uninstall these components or not.
+Note that uninstalling the package will not remove Python, pip and Virtualenv whether
+they were or were not installed during the installation process. It is up to the user if
+they would like to uninstall these components or not.
 
 In order to uninstall Python, follow the same steps as above only choosing Python
 instead of Cloudify CLI.

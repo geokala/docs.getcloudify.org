@@ -37,18 +37,40 @@ For all users the following components are required:
 
 ### For Linux users
 The following should be available in your OS package repository:
-* Python header files (`python-dev` in Ubuntu or `python-devel` in CentOS)
+* Python header files (`python-dev` in Ubuntu/Debian or `python-devel` in CentOS/RHEL)
 * GNU C compiler (`gcc`)
 
 ### For OS X users
 * [Xcode Command Line Tools](https://developer.apple.com/library/ios/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588-CH1-DOWNLOADING_COMMAND_LINE_TOOLS_IS_NOT_AVAILABLE_IN_XCODE_FOR_OS_X_10_9__HOW_CAN_I_INSTALL_THEM_ON_MY_MACHINE_)
 
+## Installing from PyPi
+
+PyPi is the official repository for 3rd party Python modules. Cloudify uploads
+its Python artifacts to PyPi.
+
+Installing the latest release from PyPi is done by running the following commands
+in a terminal:
+{{< gsHighlight bash >}}
+$ pip install cloudify
+{{< /gsHighlight >}}
+
+It's also possible to request a specific version:
+{{< gsHighlight bash >}}
+$ pip install cloudify==3.3
+{{< /gsHighlight >}}
+
+PyPi contains the same [releases](https://github.com/cloudify-cosmo/cloudify-cli/tags) that you can find on GitHub, however naming convention
+is a bit different, for example, to get `3.3m6` you'll need to request
+`cloudify==3.3a6`.
+
+Full list of PyPi versions is [available here](https://pypi.python.org/pypi/cloudify/json).
+
 ## Installing from GitHub
 
-Cloudify uses GitHub as it's main online source code repository.
+Cloudify uses GitHub as its main online source code repository.
 
-Installing latest stable version from GitHub can be done by running the following
-commands in terminal:
+Installing the latest stable version from GitHub can be done by running the following
+commands in a terminal:
 {{< gsHighlight bash >}}
 $ CFY_VERSION="3.3"
 $ pip install "https://github.com/cloudify-cosmo/cloudify-cli/archive/$CFY_VERSION.zip" \
@@ -62,25 +84,4 @@ $ pip install "https://github.com/cloudify-cosmo/cloudify-cli/archive/$CFY_VERSI
   --requirement "https://raw.githubusercontent.com/cloudify-cosmo/cloudify-cli/$CFY_VERSION/dev-requirements.txt"
 {{< /gsHighlight >}}
 
-You can set `CFY_VERSION` variable to any desired version from [version list](https://github.com/cloudify-cosmo/cloudify-cli/tags).
-
-## Installing from PyPi
-
-PyPi is the official repository for 3rd party Python modules. Cloudify uploads
-its Python artifacts to PyPi.
-
-Installation the latest release from PyPi is done by running the following commands in terminal:
-{{< gsHighlight bash >}}
-$ pip install cloudify
-{{< /gsHighlight >}}
-
-It's also possible to request specific version:
-{{< gsHighlight bash >}}
-$ pip install cloudify==3.3
-{{< /gsHighlight >}}
-
-PyPi contains the same [releases](https://github.com/cloudify-cosmo/cloudify-cli/tags) that you can find on GitHub, however naming convention
-is a bit different, for example, to get `3.3m6` you'll need to request
-`cloudify==3.3a6`.
-
-Full list of PyPi versions is [available here](https://pypi.python.org/pypi/cloudify/json).
+You can set the `CFY_VERSION` variable to any desired version from [version list](https://github.com/cloudify-cosmo/cloudify-cli/tags).
